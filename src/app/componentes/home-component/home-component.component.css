@@ -17,4 +17,9 @@ h2{
     margin: auto;
 }
 
+button{
+    border: none;
+    background: none;
+}
+
 

@@ -9,6 +9,10 @@ import { SendEmailComponentComponent } from './componentes/send-email-component/
 import { ShoppingComponentComponent } from './componentes/shopping-component/shopping-component.component';
 import { BuyComponentComponent } from './componentes/buy-component/buy-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { IconDownloadcvComponent } from './utils/icons/icon-downloadcv/icon-downloadcv.component';
+import { IconCopyComponent } from './utils/icons/icon-copy/icon-copy.component';
+import { IconSendEmailComponent } from './utils/icons/icon-send-email/icon-send-email.component';
+import { IconLinkedComponent } from './utils/icons/icon-linked/icon-linked.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponentComponent,
     SendEmailComponentComponent,
     ShoppingComponentComponent,
-    BuyComponentComponent
+    BuyComponentComponent,
+    IconDownloadcvComponent,
+    IconCopyComponent,
+    IconSendEmailComponent,
+    IconLinkedComponent
   ],
   imports: [
     BrowserModule,
