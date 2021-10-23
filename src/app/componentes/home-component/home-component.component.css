@@ -4,10 +4,17 @@ h2{
     margin: 0px !important;
 }
 .titulo{
-    text-align: center;
-    padding: 1% 0px;
+    text-align: center;   
 }
 
 .menuBar{
     background-color: antiquewhite;
+    padding: 1% 0px;
 }
+
+.centrarMedio{
+    text-align: center;
+    margin: auto;
+}
+
+
