@@ -1,0 +1,13 @@
+h2{
+    font-family: 'Impact';
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.titulo{
+    text-align: center;
+    padding: 1% 0px;
+}
+
+.menuBar{
+    background-color: antiquewhite;
+}
