@@ -4,6 +4,7 @@ import {
   MatSnackBar,
   MatSnackBarHorizontalPosition,
   MatSnackBarVerticalPosition,} from '@angular/material/snack-bar';
+import { HomeComponentComponent} from '../../pages/home-component/home-component.component';
 @Component({
   selector: 'app-menu-header-bar',
   templateUrl: './menu-header-bar.component.html',
@@ -15,6 +16,7 @@ export class MenuHeaderBarComponent implements OnInit {
 
   constructor(
     private _snackBar: MatSnackBar,
+    private Home : HomeComponentComponent
   ) {}
 
   ngOnInit(): void {
@@ -53,16 +55,7 @@ export class MenuHeaderBarComponent implements OnInit {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
-    this.openSnackBar(message, Constants.CLOSE);
-  }
-
-  openSnackBar(message:string, action: string){
-    this._snackBar.open(message,action,{
-      horizontalPosition: this.horizontalPosition,
-      verticalPosition: this.verticalPosition,
-      duration: 8000,
-      panelClass: ['black-snackbar']
-    });
+    this.Home.openSnackBar(message, Constants.CLOSE);
   }
 
 }
