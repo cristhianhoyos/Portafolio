@@ -6,9 +6,10 @@
         </div>
         <div class="col-6"></div>
         <div class="col-1 centrarMedio">
-            <button (click)="copyMessage()">
+            <button (click)="buildMessage(0)">
             <app-icon-copy></app-icon-copy>
             </button>
+            
         </div>
         <div class="col-1 centrarMedio">
             <button>
@@ -16,12 +17,12 @@
             </button>
         </div>
         <div class="col-1 centrarMedio">
-            <button>
+            <button (click)="buildMessage(1)">
                 <app-icon-send-email></app-icon-send-email>
             </button>
         </div>
         <div class="col-1 centrarMedio">
-            <button>
+            <button (click)="buildMessage(2)">
                 <app-icon-linked></app-icon-linked>
             </button>
         </div>
