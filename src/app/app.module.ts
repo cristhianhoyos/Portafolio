@@ -14,7 +14,8 @@ import { IconCopyComponent } from './utils/icons/icon-copy/icon-copy.component';
 import { IconSendEmailComponent } from './utils/icons/icon-send-email/icon-send-email.component';
 import { IconLinkedComponent } from './utils/icons/icon-linked/icon-linked.component';
 import { MenuHeaderBarComponent } from './componentes/menu-header-bar/menu-header-bar.component';
-
+import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,9 @@ import { MenuHeaderBarComponent } from './componentes/menu-header-bar/menu-heade
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
