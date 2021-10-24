@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconDownloadcvComponent } from './icon-downloadcv.component';
+import { MenuHeaderBarComponent } from './menu-header-bar.component';
 
-describe('IconDownloadcvComponent', () => {
-  let component: IconDownloadcvComponent;
-  let fixture: ComponentFixture<IconDownloadcvComponent>;
+describe('MenuHeaderBarComponent', () => {
+  let component: MenuHeaderBarComponent;
+  let fixture: ComponentFixture<MenuHeaderBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IconDownloadcvComponent ]
+      declarations: [ MenuHeaderBarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IconDownloadcvComponent);
+    fixture = TestBed.createComponent(MenuHeaderBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

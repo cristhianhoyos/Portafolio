@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponentComponent } from './componentes/home-component/home-component.component';
-import { BuyComponentComponent } from './componentes/buy-component/buy-component.component';
-import { PageNotFoundComponentComponent } from './componentes/page-not-found-component/page-not-found-component.component';
-import { SendEmailComponentComponent } from './componentes/send-email-component/send-email-component.component';
-import { ShoppingComponentComponent } from './componentes/shopping-component/shopping-component.component';
+import { HomeComponentComponent } from './pages/home-component/home-component.component';
+import { BuyComponentComponent } from './pages/buy-component/buy-component.component';
+import { PageNotFoundComponentComponent } from './pages/page-not-found-component/page-not-found-component.component';
+import { SendEmailComponentComponent } from './pages/send-email-component/send-email-component.component';
+import { ShoppingComponentComponent } from './pages/shopping-component/shopping-component.component';
 const routes: Routes = [
   {
     path: '', component: HomeComponentComponent
