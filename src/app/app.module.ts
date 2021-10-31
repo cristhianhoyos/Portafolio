@@ -16,6 +16,7 @@ import { IconLinkedComponent } from './utils/icons/icon-linked/icon-linked.compo
 import { MenuHeaderBarComponent } from './componentes/menu-header-bar/menu-header-bar.component';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BodyHomeComponent } from './componentes/body-home/body-home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
     IconCopyComponent,
     IconSendEmailComponent,
     IconLinkedComponent,
-    MenuHeaderBarComponent
+    MenuHeaderBarComponent,
+    BodyHomeComponent
   ],
   imports: [
     BrowserModule,
