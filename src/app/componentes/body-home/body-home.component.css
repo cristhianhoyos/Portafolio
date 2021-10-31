@@ -3,8 +3,7 @@ h1{
 }
 
 .contenedor{
-    height: 80%;
-    position: absolute;
+    height: 100%;
     width: 100%;
     display: table;
 }

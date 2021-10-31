@@ -1,22 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {Constants} from '../../utils/constants/constants';
-import {
-  MatSnackBar,
-  MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition,} from '@angular/material/snack-bar';
-import { HomeComponentComponent} from '../../pages/home-component/home-component.component';
+import {BodyHomeComponent} from'../body-home/body-home.component';
 @Component({
   selector: 'app-menu-header-bar',
   templateUrl: './menu-header-bar.component.html',
   styleUrls: ['./menu-header-bar.component.css']
 })
 export class MenuHeaderBarComponent implements OnInit {
-  horizontalPosition: MatSnackBarHorizontalPosition = 'start';
-  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
 
   constructor(
-    private _snackBar: MatSnackBar,
-    private Home : HomeComponentComponent
+    private Body : BodyHomeComponent
   ) {}
 
   ngOnInit(): void {
@@ -55,7 +48,7 @@ export class MenuHeaderBarComponent implements OnInit {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
-    this.Home.openSnackBar(message, Constants.CLOSE);
+    this.Body.openSnackBar(message, Constants.CLOSE);
   }
 
 }

@@ -39,7 +39,9 @@ import { BodyHomeComponent } from './componentes/body-home/body-home.component';
     MatSnackBarModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    BodyHomeComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
