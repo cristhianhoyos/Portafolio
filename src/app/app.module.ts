@@ -17,6 +17,7 @@ import { MenuHeaderBarComponent } from './componentes/menu-header-bar/menu-heade
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { BodyHomeComponent } from './componentes/body-home/body-home.component';
+import { IconBuscarComponent } from'./utils/icons/icon-buscar/icon-buscar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { BodyHomeComponent } from './componentes/body-home/body-home.component';
     IconSendEmailComponent,
     IconLinkedComponent,
     MenuHeaderBarComponent,
-    BodyHomeComponent
+    BodyHomeComponent,
+    IconBuscarComponent
   ],
   imports: [
     BrowserModule,
