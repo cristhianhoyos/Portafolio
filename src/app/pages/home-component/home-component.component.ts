@@ -14,6 +14,11 @@ export class HomeComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeView(page:string){
+      var element = document.getElementById(page);
+      element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
   
 
 }

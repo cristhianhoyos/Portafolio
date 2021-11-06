@@ -4,6 +4,7 @@ import {
   MatSnackBarConfig,
   MatSnackBarHorizontalPosition,
   MatSnackBarVerticalPosition,} from '@angular/material/snack-bar';
+import { HomeComponentComponent} from '../../pages/home-component/home-component.component';
 
 @Component({
   selector: 'app-body-home',
@@ -16,7 +17,8 @@ export class BodyHomeComponent implements OnInit {
 
   constructor(
     private _snackBar: MatSnackBar,
-    private zone:NgZone) { }
+    private zone:NgZone,
+    private home:HomeComponentComponent) { }
 
   ngOnInit(): void {
   }
@@ -36,9 +38,10 @@ export class BodyHomeComponent implements OnInit {
       }*/
       );
     });
+  }
 
-
-    
+  changePage(page:string){
+      this.home.changeView(page);
   }
 
 }
