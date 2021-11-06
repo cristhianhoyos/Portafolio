@@ -1,3 +1,4 @@
-input::-webkit-search-decoration {
-    display: none;
-  }
+input::-webkit-calendar-picker-indicator {
+  display: none;/* remove default arrow */
+  opacity: 0;
+}
