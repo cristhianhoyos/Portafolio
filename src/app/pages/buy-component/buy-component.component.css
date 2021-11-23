@@ -1,4 +1,34 @@
-input::-webkit-calendar-picker-indicator {
-  display: none;/* remove default arrow */
-  opacity: 0;
+.title{
+  font-family: 'mogra';
+  -webkit-transform: rotate(-15deg);
+  text-shadow: 5px 5px #0000005e;
+  font-size: 60px;
+  position: relative;
+}
+
+.apellido{
+  position: absolute;
+  right: 0;
+  width: 0;
+  border-left: 1px solid black;
+  background-color: white;
+  animation: maquina 12s infinite alternate steps(15);
+}
+
+.nombre{
+  position: absolute;
+  right: 0;
+  width: 0;
+  border-left: 1px solid black;
+  background-color: white;
+  animation: maquina 12s infinite alternate steps(17);
+}
+
+@keyframes maquina{
+  from{
+    width: 85%;
+  }
+  to{
+    width: 0%;
+  }
 }

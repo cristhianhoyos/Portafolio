@@ -10,3 +10,8 @@
     background-color: black;
     color: white;
 }
+
+@font-face {
+    font-family: mogra;
+    src: url(assets/font/Mogra-Regular.ttf) format("opentype");
+  }
